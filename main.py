@@ -14,3 +14,6 @@ game = Quiz_brain(questions_list)
 
 while game.still_has_question():
     question_ans, ans = game.ask_question()
+    game.check_ans(question_ans, ans)
+print(f'Your score: {game.score} / {len(questions_list)}')
+
